@@ -1,0 +1,20 @@
+{
+    "main": "lib/binding.js",
+    "dependencies": {
+        "node-addon-api": "3.0.0"
+    },
+    "scripts": {
+        "build": "node-gyp rebuild && tsc",
+        "test": "node --napi-modules ./test/test_binding.js"
+    },
+    "gypfile": true,
+    "name": "obj-plus-plus",
+    "version": "0.0.0",
+    "description": "A fast NodeJS object toolkit",
+    "author": "Jimmy Cao",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "*",
+        "typescript": "^4.0.2"
+    }
+}
